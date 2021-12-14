@@ -5,7 +5,7 @@ from time import sleep
 Test Website Digikala
 """
 
-#
+# open browser (by chrome driver) and open digikala.com
 driver = webdriver.Chrome(executable_path='chromedriver.exe')
 driver.maximize_window()
 driver.get('https://www.digikala.com/')
