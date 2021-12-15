@@ -17,7 +17,8 @@ driver.find_element(By.XPATH, '/html/body/header/div/div/div[2]/div[1]/div/a').c
 sleep(2)
 
 # find the username input and add data on it
-driver.find_element(By.NAME, 'login[email_phone]').send_keys('09194731285')
+username = input('Username: ')
+driver.find_element(By.NAME, 'login[email_phone]').send_keys(username)
 sleep(2)
 
 # click on login button for continue
@@ -25,7 +26,8 @@ driver.find_element(By.XPATH ,'//*[@id="loginForm"]/button').click()
 sleep(2)
 
 # find the password input and add data on it
-driver.find_element(By.NAME, 'login[password]').send_keys('M_019980_m')
+password = input('Password: ')
+driver.find_element(By.NAME, 'login[password]').send_keys(password)
 sleep(2)
 
 # click on continue button for login
